@@ -2,7 +2,7 @@ FROM pytorch/pytorch
 
 WORKDIR /app
 
-COPY ./requirements.txt requirements.txt
+COPY ./dockerProject/requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
