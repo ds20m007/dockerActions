@@ -21,7 +21,7 @@ jobs:
     - name: Build and export
       uses: docker/build-push-action@v2
       with:
-          context: .
+          context: ./dockerProject
           tags: ds20m007/ml-api-demo:${{ github.sha }}
           outputs: type=docker,dest=/tmp/myimage.tar
           
